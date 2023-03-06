@@ -157,7 +157,39 @@ header .menu ul li a {
     border: 1px solid black;
   }
 
+    /* about us section  */
+
+  .about-us {
+    
+    /* debug */
+    height: 400px;
+    color: black;
+  }
+
+
 /* FOOTER */
+
+    /* price section */
+
+  .price {
+    background-color: #9792e4;
+
+  }
+
+  .price h2 {
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+    /* credits section */
+
+.credits {
+  background-color: black;
+
+  /* debug */
+  height: 200px;
+}
 
 /* QUERY */
 
@@ -216,6 +248,20 @@ header .menu ul li a {
   .benefits .col {
     width: 50%;
   }
+
+  /* about us section */
+
+  .about-us .row {
+    display: flex;
+  }
+
+  /* footer */
+
+  /* price section */
+  .container.small {
+    max-width: 768px;
+  }
+
 }
 
 
@@ -241,5 +287,11 @@ header .menu ul li a {
 
   .benefits .col {
     width: calc(100% / 3);
+  }
+
+  /* about us section */
+
+  .about-us .col-right {
+    width: 100%;
   }
 }
