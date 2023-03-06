@@ -10,6 +10,9 @@
   width: 95%;
   max-width: 1380px;
   margin: 0 auto;
+
+  /* debug */
+  height: 100%;
 }
 
 body {
@@ -17,21 +20,33 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* UTILITIES */
+section  {
 
-.debug {
-  background-color: rgba(0, 30, 255, 0.232);
-  border: 1px solid black;
+  /* debug forse */
+  margin: 50px 0;
+  padding: 50px;
 }
+
+/* UTILITIES */
 
 .d-flex {
   display: flex;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
 /* HEADER */
 
 header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
   height: 80px;
+  width: 100%;
+  background-color: #0084fd;
 }
 
 header .container {
@@ -63,16 +78,104 @@ header .menu ul li a {
 
 /* MAIN */
 
+      /* demo app section */
+
+.demo-app {
+  margin-top: 100px;
+}
+
+.demo-app .col>div {
+  background-color: #b5ddff;
+  width: 100%;
+
+  /* debug */
+  height: 500px;
+  border: 1px solid black;
+}
+
+.col-up .left-content>div {
+  width: 100%;
+
+  /* debug */
+  height: 200px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+    /* strategic planning section */
+
+.planning  {
+  background-color: #9792e4;
+
+  /* debug */
+  height: 500px;
+}
+
+.planning .col {
+  width: 100%;
+
+  /* debug */
+  height: 200px;
+  background-color: rgb(210, 29, 29);
+  border: 1px solid black;
+}
+
 /* FOOTER */
 
 /* QUERY */
 
 @media screen and (min-width:768px) {
+
+  /* header */
+
   header .burger {
     display: none;
   }
 
   header .menu {
     display: block;
+  }
+
+  /* demo app section */
+
+  .demo-app .col-up .left-content {
+    width: calc((100% / 3)*2);
+  }
+
+  .demo-app .col-up .right-content {
+    width: calc(100% / 3);
+  }
+
+  .demo-app .col-down .left-content {
+    width: calc(100% / 3);
+  }
+  
+  .demo-app .col-down .center-content {
+    width: calc(100% / 3);
+  }
+
+  .demo-app .col-down .right-content {
+    width: calc(100% / 3);
+  }
+
+  /* strategic planning section */
+}
+
+
+
+@media screen and (min-width:1140px) {
+
+  /* header */
+
+  /* demo app section */
+
+  .demo-app .col-up .left-content>div {
+    width: 50%;
+  }
+
+  /* strategic planning section */
+
+  .planning .col {
+    width: 50%;
   }
 }
