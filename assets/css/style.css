@@ -120,6 +120,43 @@ header .menu ul li a {
   border: 1px solid black;
 }
 
+    /* testimonials section */
+
+.testimonials .col {
+  width: 100%;
+  
+  /* debug */
+  height: 300px;
+  background-color: #9792e4;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.testimonials .inner-row .image {
+  width: 100%;
+
+  /* debug */
+  height: 120px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+    /* benefits section */
+
+  .benefits {
+    background-color: #9792e4;
+  }
+
+  .benefits .col {
+    width: 100%;
+    background-color: white;
+
+    /* debug */
+    color: black;
+    height: 150px;
+    border: 1px solid black;
+  }
+
 /* FOOTER */
 
 /* QUERY */
@@ -159,6 +196,26 @@ header .menu ul li a {
   }
 
   /* strategic planning section */
+
+  /* testimonials section */
+  .inner-row {
+    display: flex;
+  }
+
+  .inner-row .image {
+    width: 300px;
+  }
+
+  /* benefits section */
+
+  .benefits .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .benefits .col {
+    width: 50%;
+  }
 }
 
 
@@ -177,5 +234,12 @@ header .menu ul li a {
 
   .planning .col {
     width: 50%;
+  }
+
+  
+  /* benefits section */
+
+  .benefits .col {
+    width: calc(100% / 3);
   }
 }
